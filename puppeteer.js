@@ -23,15 +23,21 @@ const puppeteer = require('puppeteer');
             return resultados.map((jugador)=>{
                 //Optener las propiedades de los jugadores
                  const nombreJugador = jugador.querySelector('tbody>tr>td.hauptlink>a')?.innerText;
-                 const nacionalidadEtiqueta = jugador.querySelector('tbody>tr>td>img.flaggenrahmen')
+                 const nacionalidadEtiqueta = jugador.querySelector('tbody>tr>td>img.flaggenrahmen') 
+                 const segundaNacionalidadEtiqueta = jugador.querySelector('tbody>tr>td>img.flaggenrahmen:nth-child(3)')
                  console.log(nacionalidadEtiqueta)
                  const nacionalidad = nacionalidadEtiqueta?.getAttribute('title');
-                 //Corregir que es el cuarto TD
-                 const edad = document.querySelector('table>tbody>tr>td:4')?.innerText;
+                 const nacionalidad2 = segundaNacionalidadEtiqueta?.getAttribute('title') || "No tiene una segunda nacionalidad";
+                 
+                 const edad = document.querySelector('tr>td:nth-child(4)')?.innerText;
 
                  return{
                     nombreJugador,
-                    nacionalidad
+                    nacionalidades:{
+                        nacionalidad,
+                        nacionalidad2
+                    },
+                    edad
                  };
             });
             //Arriba acaba el return
@@ -39,11 +45,16 @@ const puppeteer = require('puppeteer');
         jugadores = [...jugadores,...jugadoresEspañolesOptenidos];
 
         btnPaginaSiguiente = await pagina.evaluate(()=>{
+            //<li class="tm-pagination__list-item tm-pagination__list-item--icon-next-page"><a href="/laliga/marktwerte/pokalwettbewerb/ES1/ajax/yw1/pos//detailpos/0/altersklasse/alle/plus/1/page/2" title="A la página siguiente" class="tm-pagination__link">&nbsp;&nbsp;</a></li>
             const btnSiguiente = document.querySelector("div>ul>li.tm-pagination__list-item tm-pagination__list-item--icon-next-page");
-            if(btnSiguiente==true){
+            console.log(btnSiguiente)
+            if(btnSiguiente==true || btnSiguiente != null){
+                console.log("Holaaaaaaaaaa")
                 btnSiguiente.click();
+                
                 return true;
             }
+            console.log("Esta en el else fuera del IF")
             return false
         });
 
