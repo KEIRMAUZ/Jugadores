@@ -1,0 +1,1002 @@
+[
+  {
+    "numero": 1,
+    "name": "Lamine Yamal",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "200.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 2,
+    "name": "Jude Bellingham",
+    "edad": "17",
+    "nationality": "Inglaterra",
+    "club": "",
+    "marketValue": "180.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "22/12/2023"
+  },
+  {
+    "numero": 3,
+    "name": "Kylian Mbappé",
+    "edad": "17",
+    "nationality": "Francia",
+    "club": "",
+    "marketValue": "200.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "17/12/2018"
+  },
+  {
+    "numero": 4,
+    "name": "Vinicius Junior",
+    "edad": "17",
+    "nationality": "Brasil",
+    "club": "",
+    "marketValue": "200.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "11/10/2024"
+  },
+  {
+    "numero": 5,
+    "name": "Pedri",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "140.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 6,
+    "name": "Federico Valverde",
+    "edad": "17",
+    "nationality": "Uruguay",
+    "club": "",
+    "marketValue": "130.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "11/10/2024"
+  },
+  {
+    "numero": 7,
+    "name": "Julián Alvarez",
+    "edad": "17",
+    "nationality": "Argentina",
+    "club": "",
+    "marketValue": "100.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 8,
+    "name": "Raphinha",
+    "edad": "17",
+    "nationality": "Brasil",
+    "club": "",
+    "marketValue": "90.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 9,
+    "name": "Rodrygo",
+    "edad": "17",
+    "nationality": "Brasil",
+    "club": "",
+    "marketValue": "110.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 10,
+    "name": "Pau Cubarsí",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "80.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 11,
+    "name": "Aurélien Tchouaméni",
+    "edad": "17",
+    "nationality": "Francia",
+    "club": "",
+    "marketValue": "100.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 12,
+    "name": "Trent Alexander-Arnold",
+    "edad": "17",
+    "nationality": "Inglaterra",
+    "club": "",
+    "marketValue": "110.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "10/12/2019"
+  },
+  {
+    "numero": 13,
+    "name": "Nico Williams",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "70.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "18/07/2024"
+  },
+  {
+    "numero": 14,
+    "name": "Jules Koundé",
+    "edad": "17",
+    "nationality": "Francia",
+    "club": "",
+    "marketValue": "65.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 15,
+    "name": "Martín Zubimendi",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "60.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "11/10/2024"
+  },
+  {
+    "numero": 16,
+    "name": "Dani Olmo",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "60.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "18/07/2024"
+  },
+  {
+    "numero": 17,
+    "name": "Dean Huijsen",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "60.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "30/05/2025"
+  },
+  {
+    "numero": 18,
+    "name": "Alejandro Balde",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "60.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "21/03/2025"
+  },
+  {
+    "numero": 19,
+    "name": "Gavi",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "90.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/11/2022"
+  },
+  {
+    "numero": 20,
+    "name": "Eduardo Camavinga",
+    "edad": "17",
+    "nationality": "Francia",
+    "club": "",
+    "marketValue": "100.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 21,
+    "name": "Oihan Sancet",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "60.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "21/03/2025"
+  },
+  {
+    "numero": 22,
+    "name": "Pablo Barrios",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "55.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 23,
+    "name": "Álex Baena",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "55.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 24,
+    "name": "Fermín López",
+    "edad": "17",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "50.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "11/10/2024"
+  },
+  {
+    "numero": 25,
+    "name": "Frenkie de Jong",
+    "edad": "17",
+    "nationality": "Países Bajos",
+    "club": "",
+    "marketValue": "90.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "20/12/2019"
+  },
+  {
+    "numero": 26,
+    "name": "Arda Güler",
+    "edad": "20",
+    "nationality": "Turquía",
+    "club": "",
+    "marketValue": "45.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "18/07/2024"
+  },
+  {
+    "numero": 27,
+    "name": "Robin Le Normand",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "40.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "22/12/2023"
+  },
+  {
+    "numero": 28,
+    "name": "Conor Gallagher",
+    "edad": "20",
+    "nationality": "Inglaterra",
+    "club": "",
+    "marketValue": "50.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/05/2024"
+  },
+  {
+    "numero": 29,
+    "name": "Raúl Asencio",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "40.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 30,
+    "name": "Ferran Torres",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "50.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "05/03/2020"
+  },
+  {
+    "numero": 31,
+    "name": "Brahim Díaz",
+    "edad": "20",
+    "nationality": "Marruecos",
+    "club": "",
+    "marketValue": "45.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "21/03/2025"
+  },
+  {
+    "numero": 32,
+    "name": "Dani Vivian",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "40.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/12/2024"
+  },
+  {
+    "numero": 33,
+    "name": "Giuliano Simeone",
+    "edad": "20",
+    "nationality": "Argentina",
+    "club": "",
+    "marketValue": "35.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 34,
+    "name": "Endrick",
+    "edad": "20",
+    "nationality": "Brasil",
+    "club": "",
+    "marketValue": "60.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "17/06/2024"
+  },
+  {
+    "numero": 35,
+    "name": "Ronald Araujo",
+    "edad": "20",
+    "nationality": "Uruguay",
+    "club": "",
+    "marketValue": "70.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "23/03/2023"
+  },
+  {
+    "numero": 36,
+    "name": "Antony",
+    "edad": "20",
+    "nationality": "Brasil",
+    "club": "",
+    "marketValue": "75.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "15/09/2022"
+  },
+  {
+    "numero": 37,
+    "name": "Takefusa Kubo",
+    "edad": "20",
+    "nationality": "Japón",
+    "club": "",
+    "marketValue": "60.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "22/12/2023"
+  },
+  {
+    "numero": 38,
+    "name": "Cristhian Mosquera",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "30.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 39,
+    "name": "Marc Casadó",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "30.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/12/2024"
+  },
+  {
+    "numero": 40,
+    "name": "Éder Militão",
+    "edad": "20",
+    "nationality": "Brasil",
+    "club": "",
+    "marketValue": "70.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "23/03/2023"
+  },
+  {
+    "numero": 41,
+    "name": "Giorgi Mamardashvili",
+    "edad": "20",
+    "nationality": "Georgia",
+    "club": "",
+    "marketValue": "45.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "18/07/2024"
+  },
+  {
+    "numero": 42,
+    "name": "Jesús Rodríguez",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "30.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 43,
+    "name": "Mikel Jauregizar",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "30.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 44,
+    "name": "Yéremy Pino",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "40.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "21/03/2022"
+  },
+  {
+    "numero": 45,
+    "name": "Unai Simón",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "30.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "23/07/2020"
+  },
+  {
+    "numero": 46,
+    "name": "Alberto Moleiro",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/12/2024"
+  },
+  {
+    "numero": 47,
+    "name": "Alexander Sørloth",
+    "edad": "20",
+    "nationality": "Noruega",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 48,
+    "name": "Joan García",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 49,
+    "name": "Rodrigo De Paul",
+    "edad": "20",
+    "nationality": "Argentina",
+    "club": "",
+    "marketValue": "40.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "16/07/2021"
+  },
+  {
+    "numero": 50,
+    "name": "Marcos Llorente",
+    "edad": "20",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "80.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "31/05/2021"
+  },
+  {
+    "numero": 51,
+    "name": "Mikel Oyarzabal",
+    "edad": "28",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "70.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "05/01/2021"
+  },
+  {
+    "numero": 52,
+    "name": "Johnny Cardoso",
+    "edad": "28",
+    "nationality": "Estados Unidos",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 53,
+    "name": "Loïc Badé",
+    "edad": "28",
+    "nationality": "Francia",
+    "club": "",
+    "marketValue": "30.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "21/03/2025"
+  },
+  {
+    "numero": 54,
+    "name": "Javi Guerra",
+    "edad": "28",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 55,
+    "name": "Samuel Lino",
+    "edad": "28",
+    "nationality": "Brasil",
+    "club": "",
+    "marketValue": "30.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 56,
+    "name": "Brais Méndez",
+    "edad": "28",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "40.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "22/12/2023"
+  },
+  {
+    "numero": 57,
+    "name": "Aitor Paredes",
+    "edad": "28",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "22.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 58,
+    "name": "Thierno Barry",
+    "edad": "28",
+    "nationality": "Francia",
+    "club": "",
+    "marketValue": "20.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 59,
+    "name": "Jan Oblak",
+    "edad": "28",
+    "nationality": "Eslovenia",
+    "club": "",
+    "marketValue": "100.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "11/06/2019"
+  },
+  {
+    "numero": 60,
+    "name": "Fábio Silva",
+    "edad": "28",
+    "nationality": "Portugal",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "13/10/2020"
+  },
+  {
+    "numero": 61,
+    "name": "José María Giménez",
+    "edad": "28",
+    "nationality": "Uruguay",
+    "club": "",
+    "marketValue": "70.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "28/02/2019"
+  },
+  {
+    "numero": 62,
+    "name": "Sergio Gómez",
+    "edad": "28",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "20.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/12/2024"
+  },
+  {
+    "numero": 63,
+    "name": "Nahuel Molina",
+    "edad": "28",
+    "nationality": "Argentina",
+    "club": "",
+    "marketValue": "50.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "13/10/2023"
+  },
+  {
+    "numero": 64,
+    "name": "Enzo Boyomo",
+    "edad": "28",
+    "nationality": "Camerún",
+    "club": "",
+    "marketValue": "20.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/12/2024"
+  },
+  {
+    "numero": 65,
+    "name": "Óscar Mingueza",
+    "edad": "28",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "20.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/12/2024"
+  },
+  {
+    "numero": 66,
+    "name": "Thibaut Courtois",
+    "edad": "28",
+    "nationality": "Bélgica",
+    "club": "",
+    "marketValue": "75.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "08/10/2020"
+  },
+  {
+    "numero": 67,
+    "name": "Antonio Rüdiger",
+    "edad": "28",
+    "nationality": "Alemania",
+    "club": "",
+    "marketValue": "50.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "13/06/2019"
+  },
+  {
+    "numero": 68,
+    "name": "Miguel Gutiérrez",
+    "edad": "28",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 69,
+    "name": "Dodi Lukébakio",
+    "edad": "28",
+    "nationality": "Bélgica",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "21/03/2025"
+  },
+  {
+    "numero": 70,
+    "name": "Antoine Griezmann",
+    "edad": "28",
+    "nationality": "Francia",
+    "club": "",
+    "marketValue": "150.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "31/10/2018"
+  },
+  {
+    "numero": 71,
+    "name": "Nayef Aguerd",
+    "edad": "28",
+    "nationality": "Marruecos",
+    "club": "",
+    "marketValue": "38.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "19/12/2023"
+  },
+  {
+    "numero": 72,
+    "name": "Eric García",
+    "edad": "28",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "20.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "13/10/2020"
+  },
+  {
+    "numero": 73,
+    "name": "Andriy Lunin",
+    "edad": "28",
+    "nationality": "Ucrania",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 74,
+    "name": "Fran García",
+    "edad": "28",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "18.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 75,
+    "name": "Cucho Hernández",
+    "edad": "28",
+    "nationality": "Colombia",
+    "club": "",
+    "marketValue": "18.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "12/12/2024"
+  },
+  {
+    "numero": 76,
+    "name": "Viktor Tsygankov",
+    "edad": "27",
+    "nationality": "Ucrania",
+    "club": "",
+    "marketValue": "30.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 77,
+    "name": "Álex Remiro",
+    "edad": "27",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/11/2022"
+  },
+  {
+    "numero": 78,
+    "name": "Logan Costa",
+    "edad": "27",
+    "nationality": "Cabo Verde",
+    "club": "",
+    "marketValue": "18.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "11/10/2024"
+  },
+  {
+    "numero": 79,
+    "name": "Beñat Prados",
+    "edad": "27",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "20.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/12/2024"
+  },
+  {
+    "numero": 80,
+    "name": "Luka Sucic",
+    "edad": "27",
+    "nationality": "Croacia",
+    "club": "",
+    "marketValue": "20.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/05/2022"
+  },
+  {
+    "numero": 81,
+    "name": "Aimar Oroz",
+    "edad": "27",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "13/06/2023"
+  },
+  {
+    "numero": 82,
+    "name": "Ander Barrenetxea",
+    "edad": "27",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "20.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "22/12/2023"
+  },
+  {
+    "numero": 83,
+    "name": "Christantus Uche",
+    "edad": "27",
+    "nationality": "Nigeria",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 84,
+    "name": "Javi Rodríguez",
+    "edad": "27",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 85,
+    "name": "Orri Óskarsson",
+    "edad": "27",
+    "nationality": "Islandia",
+    "club": "",
+    "marketValue": "20.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "11/10/2024"
+  },
+  {
+    "numero": 86,
+    "name": "Jon Aramburu",
+    "edad": "27",
+    "nationality": "Venezuela",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 87,
+    "name": "Diego López",
+    "edad": "27",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 88,
+    "name": "Ilias Akhomach",
+    "edad": "27",
+    "nationality": "Marruecos",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 89,
+    "name": "Samú Costa",
+    "edad": "27",
+    "nationality": "Portugal",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/12/2024"
+  },
+  {
+    "numero": 90,
+    "name": "Omar El Hilali",
+    "edad": "27",
+    "nationality": "Marruecos",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 91,
+    "name": "Sergi Altimira",
+    "edad": "27",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 92,
+    "name": "Yangel Herrera",
+    "edad": "27",
+    "nationality": "Venezuela",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "07/06/2024"
+  },
+  {
+    "numero": 93,
+    "name": "Giovani Lo Celso",
+    "edad": "27",
+    "nationality": "Argentina",
+    "club": "",
+    "marketValue": "50.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "11/06/2019"
+  },
+  {
+    "numero": 94,
+    "name": "Juan Foyth",
+    "edad": "27",
+    "nationality": "Argentina",
+    "club": "",
+    "marketValue": "25.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "03/06/2022"
+  },
+  {
+    "numero": 95,
+    "name": "Bryan Gil",
+    "edad": "27",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "30.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "10/06/2021"
+  },
+  {
+    "numero": 96,
+    "name": "Iñaki Williams",
+    "edad": "27",
+    "nationality": "Ghana",
+    "club": "",
+    "marketValue": "50.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "11/06/2019"
+  },
+  {
+    "numero": 97,
+    "name": "Yáser Asprilla",
+    "edad": "27",
+    "nationality": "Colombia",
+    "club": "",
+    "marketValue": "18.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "11/10/2024"
+  },
+  {
+    "numero": 98,
+    "name": "Pape Gueye",
+    "edad": "27",
+    "nationality": "Senegal",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "09/06/2025"
+  },
+  {
+    "numero": 99,
+    "name": "Julen Agirrezabala",
+    "edad": "27",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "15.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "27/12/2024"
+  },
+  {
+    "numero": 100,
+    "name": "Hugo Duro",
+    "edad": "27",
+    "nationality": "España",
+    "club": "",
+    "marketValue": "16.00 mill. €",
+    "highestValue": "",
+    "lastUpdate": "21/03/2024"
+  }
+]

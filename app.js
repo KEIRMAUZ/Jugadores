@@ -1,54 +1,72 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
-const path = require('path');
 
-(async () => {
-    const baseUrl = 'https://www.transfermarkt.mx/laliga/marktwerte/wettbewerb/ES1/pos//detailpos/0/altersklasse/alle/land_id/0/plus/1';
-    const results = [];
+const BASE_URL = 'https://www.transfermarkt.mx';
+const START_URL = '/laliga/marktwerte/wettbewerb/ES1/pos//detailpos/0/altersklasse/alle/land_id/0/plus/1';
+const MAX_PLAYERS = 100;
 
-    const browser = await puppeteer.launch({ headless: true });
-    const page = await browser.newPage();
+async function scrape() {
+  const browser = await puppeteer.launch({ headless: true });
+  const page = await browser.newPage();
+  let url = BASE_URL + START_URL;
+  let players = [];
+  let pageNum = 1;
+  let playerCount = 1;
 
-    let currentPage = 1;
-    let hasNextPage = true;
+  while (url && players.length < MAX_PLAYERS) {
+    console.log(`Scrapeando pagina ${pageNum}: ${url}`);
+    await page.goto(url, { waitUntil: 'domcontentloaded' });
 
-    while (hasNextPage) {
-        const url = currentPage === 1 ? baseUrl : `${baseUrl}/page/${currentPage}`;
-        await page.goto(url, { waitUntil: 'networkidle2' });
+    const pagePlayers = await page.$$eval('table.items tbody tr', rows =>
+      rows.map(row => {
+        const tds = row.querySelectorAll('td');
+        if (tds.length < 8) return null;
 
-        await page.waitForSelector('.items');
+        // Nombre
+        const name = tds[1].querySelector('tbody>tr>td.hauptlink>a')?.textContent.trim() || '';
 
-        const jugadores = await page.evaluate(() => {
-            const rows = Array.from(document.querySelectorAll('responsive-table tbody tr'));
-            return rows
-                .filter(row => row.querySelector('td.posrela'))
-                .map(row => {
-                    const nombre = row.querySelector('')?.innerText.trim() || '';
-                    const edad = row.querySelector('')?.innerText.trim() || '';
-                    const nacionalidad = row.querySelector('td.zentriert img.flaggenrahmen')?.title || '';
-                    const club = row.querySelector('td.no-border-links a.vereinprofil_tooltip')?.innerText.trim() || '';
-                    const valorCarrera = row.querySelector('td.rechts')?.innerText.trim() || '';
-                    const ultimaRevision = row.querySelector('td.rechts:nth-child(6)')?.innerText.trim() || '';
-                    const valorMercado = row.querySelector('td.rechts:nth-child(7)')?.innerText.trim() || '';
-                    return { nombre, edad, nacionalidad, club, valorCarrera, ultimaRevision, valorMercado };
-                });
-        });
+        // Edad 
+        const edad = document.querySelector('tr>td:nth-child(4)')?.innerText;
+        // Nacionalidad
+        const nationality = tds[5]?.querySelector('img')?.title || '';
 
-        results.push(...jugadores);
-        console.log(`Página ${currentPage} procesada, jugadores encontrados: ${jugadores.length}`);
+        // Club
+        const club = tds[6]?.querySelector('a')?.title || '';
 
-        // Detecta si hay una página siguiente
-        hasNextPage = await page.evaluate(() => {
-            const nextBtn = document.querySelector('.tm-pagination__list-item--icon-next:not(.tm-pagination__list-item--disabled)');
-            return !!nextBtn;
-        });
+        // Valor de mercado actual
+        const marketValue = tds[8]?.textContent.trim() || '';
 
-        currentPage++;
+        // Valor más alto de la carrera 
+        const highestValue = tds[8]?.querySelector('.icons_sprite.icon-werteverlauf')?.getAttribute('onmouseover')?.match(/'([^']+)'/)?.[1] || '';
+
+        // Última actualización 
+        const lastUpdate = tds[8]?.querySelector('span')?.getAttribute('title') || '';
+
+        return { name, edad, nationality, club, marketValue, highestValue, lastUpdate };
+      }).filter(Boolean)
+    );
+
+    const remaining = MAX_PLAYERS - players.length;
+    const numberedPlayers = pagePlayers.slice(0, remaining).map(player => ({
+      numero: playerCount++,
+      ...player
+    }));
+    players.push(...numberedPlayers);
+
+    if (players.length >= MAX_PLAYERS) break;
+
+    const nextHref = await page.$eval('.tm-pagination__list-item--icon-next-page a', a => a.getAttribute('href')).catch(() => null);
+    if (nextHref) {
+      url = BASE_URL + nextHref;
+      pageNum++;
+    } else {
+      url = null;
     }
+  }
 
-    await browser.close();
+  await browser.close();
+  fs.writeFileSync('jugadores.json', JSON.stringify(players, null, 2));
+  console.log(`:::Scraping terminado. ${players.length} lista de jugadores creada en jugadores.json:::`);
+}
 
-    const outputPath = path.join(__dirname, 'jugadores.json');
-    fs.writeFileSync(outputPath, JSON.stringify(results, null, 2), 'utf-8');
-    console.log(`Datos guardados en ${outputPath}`);
-})();
+scrape().catch(console.error);
