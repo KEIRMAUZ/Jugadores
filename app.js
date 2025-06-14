@@ -27,6 +27,7 @@ const XLSX = require('xlsx');
             return resultados.map((jugador)=>{
                 //Optener las propiedades de los jugadores
                 const index = jugador.querySelector("tr>td:nth-child(1)")?.innerText;
+                const fotoJugador = jugador.querySelector("tbody>tr>td>img")?.getAttribute("data-src");
                  const nombreJugador = jugador.querySelector('tbody>tr>td.hauptlink>a')?.innerText;
                  const nacionalidadEtiqueta = jugador.querySelector('tbody>tr>td>img.flaggenrahmen') 
                  const segundaNacionalidadEtiqueta = jugador.querySelector('tbody>tr>td>img.flaggenrahmen:nth-child(3)')
@@ -41,9 +42,10 @@ const XLSX = require('xlsx');
                  const valorMasAlto = jugador.querySelector("tr>td:nth-child(6)>span")?.innerText
                  const ultimaRevision = jugador.querySelector("tr>td:nth-child(7)")?.innerText
                  const valorDelMercado = jugador.querySelector("tr>td:nth-child(8)>a")?.innerText
-                 
+
                  return{
                     index,
+                    fotoJugador,
                     nombreJugador,
                     nacionalidades:`Sus nacionalidades ${nacionalidad} y ${nacionalidad2}`,
                     edad,
