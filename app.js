@@ -1,4 +1,4 @@
-const Parser = require('json2csv');
+const {Parser} = require('json2csv');
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
@@ -74,9 +74,22 @@ const fs = require('fs');
     console.log('Jugadores: ', jugadores);
 
     let data = JSON.stringify(jugadores);
-    fs.writeFileSync("Jugadores.json",data);
-    
+    fs.writeFileSync("jugadores.json",data);
+    console.log(`Los datos se guardaron en el archivo jugadores.json`); 
 
+    // Crear archivo csv
+    const fields = ['index', 'nombreJugador', 'nacionalidades.nacionalidad', 'nacionalidades.nacionalidad2', 'edad', 'club', 'valorMasAlto', 'ultimaRevision', 'valorDelMercado'];
+    const json2csvParse = new Parser({
+        fields: fields,
+        defaultValue: 'No info'
+    });
+    const csv = json2csvParse.parse(jugadores);
+    fs.writeFileSync("./jugadores.csv", csv, "utf-8");
+    console.log('Archivo jugadores.csv creado');
+
+    // Crear archivo de excel
+    
+    
     await navegador.close();
     console.log("Termino el scraping")
 })();
