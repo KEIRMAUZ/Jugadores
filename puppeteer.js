@@ -29,7 +29,10 @@ const puppeteer = require('puppeteer');
                  const nacionalidad = nacionalidadEtiqueta?.getAttribute('title');
                  const nacionalidad2 = segundaNacionalidadEtiqueta?.getAttribute('title') || "No tiene una segunda nacionalidad";
                  
-                 const edad = document.querySelector('tr>td:nth-child(4)')?.innerText;
+                 const edad = jugador.querySelector('tbody>tr>td:nth-child(4)')?.innerText;
+
+                 const clubEtiqueta = jugador.querySelector("tr>td:nth-child(5)>a")
+                 const club = clubEtiqueta?.title
 
                  return{
                     nombreJugador,
@@ -37,7 +40,8 @@ const puppeteer = require('puppeteer');
                         nacionalidad,
                         nacionalidad2
                     },
-                    edad
+                    edad,
+                    club
                  };
             });
             //Arriba acaba el return
@@ -46,7 +50,7 @@ const puppeteer = require('puppeteer');
 
         btnPaginaSiguiente = await pagina.evaluate(()=>{
             //<li class="tm-pagination__list-item tm-pagination__list-item--icon-next-page"><a href="/laliga/marktwerte/pokalwettbewerb/ES1/ajax/yw1/pos//detailpos/0/altersklasse/alle/plus/1/page/2" title="A la página siguiente" class="tm-pagination__link">&nbsp;&nbsp;</a></li>
-            const btnSiguiente = document.querySelector("div>ul>li.tm-pagination__list-item tm-pagination__list-item--icon-next-page");
+            const btnSiguiente = document.querySelector("div>ul>li.a.tm-pagination__link");
             console.log(btnSiguiente)
             if(btnSiguiente==true || btnSiguiente != null){
                 console.log("Holaaaaaaaaaa")
