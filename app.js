@@ -1,6 +1,7 @@
 const {Parser} = require('json2csv');
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const XLSX = require('xlsx');
 
 (async ()=> {
     const URL = `https://www.transfermarkt.mx/laliga/marktwerte/wettbewerb/ES1/pos//detailpos/0/altersklasse/alle/land_id/0/plus/1`;
@@ -40,13 +41,11 @@ const fs = require('fs');
                  const valorMasAlto = jugador.querySelector("tr>td:nth-child(6)>span")?.innerText
                  const ultimaRevision = jugador.querySelector("tr>td:nth-child(7)")?.innerText
                  const valorDelMercado = jugador.querySelector("tr>td:nth-child(8)>a")?.innerText
+                 
                  return{
                     index,
                     nombreJugador,
-                    nacionalidades:{
-                        nacionalidad,
-                        nacionalidad2
-                    },
+                    nacionalidades:`Sus nacionalidades ${nacionalidad} y ${nacionalidad2}`,
                     edad,
                     club,
                     valorMasAlto,
@@ -57,6 +56,8 @@ const fs = require('fs');
             //Arriba acaba el return
         })//Acaba jugadores españoles optenidos
         jugadores = [...jugadores,...jugadoresEspañolesOptenidos];
+        jugadoresExel =[...jugadores,...jugadoresEspañolesOptenidos];
+        jugadoresExel.nacionalidades
 
         btnPaginaSiguiente = await pagina.evaluate(()=>{
             const btnSiguiente = document.querySelector("a.tm-pagination__link[title='A la página siguiente']");
@@ -88,7 +89,11 @@ const fs = require('fs');
     console.log('Archivo jugadores.csv creado');
 
     // Crear archivo de excel
-    
+    const ws  = XLSX.utils.json_to_sheet(jugadores);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb,ws, "Archivo EXEL");
+    XLSX.writeFile(wb, './Archivo_Exel.xlsx');
+    console.log("Exel creado con exito")
     
     await navegador.close();
     console.log("Termino el scraping")
