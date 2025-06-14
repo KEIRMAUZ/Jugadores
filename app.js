@@ -1,4 +1,7 @@
+const Parser = require('json2csv');
 const puppeteer = require('puppeteer');
+const fs = require('fs');
+
 (async ()=> {
     const URL = `https://www.transfermarkt.mx/laliga/marktwerte/wettbewerb/ES1/pos//detailpos/0/altersklasse/alle/land_id/0/plus/1`;
     console.log("Dentro de la funcion")
@@ -56,7 +59,6 @@ const puppeteer = require('puppeteer');
         jugadores = [...jugadores,...jugadoresEspañolesOptenidos];
 
         btnPaginaSiguiente = await pagina.evaluate(()=>{
-            //<li class="tm-pagination__list-item tm-pagination__list-item--icon-next-page"><a href="/laliga/marktwerte/pokalwettbewerb/ES1/ajax/yw1/pos//detailpos/0/altersklasse/alle/plus/1/page/2" title="A la página siguiente" class="tm-pagination__link">&nbsp;&nbsp;</a></li>
             const btnSiguiente = document.querySelector("a.tm-pagination__link[title='A la página siguiente']");
             console.log("Este es btn siguiente", btnSiguiente)
             if(btnSiguiente){
@@ -70,6 +72,11 @@ const puppeteer = require('puppeteer');
         await new Promise((resolve)=>setTimeout(resolve,2000));
     }
     console.log('Jugadores: ', jugadores);
+
+    let data = JSON.stringify(jugadores);
+    fs.writeFileSync("Jugadores.json",data);
+    
+
     await navegador.close();
     console.log("Termino el scraping")
 })();
