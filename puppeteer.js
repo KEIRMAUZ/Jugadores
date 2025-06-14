@@ -19,9 +19,10 @@ const puppeteer = require('puppeteer');
 
     while(btnPaginaSiguiente){
         const jugadoresEspañolesOptenidos = await pagina.evaluate(()=>{
-            const resultados = Array.from(document.querySelectorAll('div>div>table>tbody>tr'));
+            const resultados = Array.from(document.querySelectorAll('div>div>table>tbody:nth-child(2)>tr'));
             return resultados.map((jugador)=>{
                 //Optener las propiedades de los jugadores
+                const index = jugador.querySelector("tr>td:nth-child(1)")?.innerText;
                  const nombreJugador = jugador.querySelector('tbody>tr>td.hauptlink>a')?.innerText;
                  const nacionalidadEtiqueta = jugador.querySelector('tbody>tr>td>img.flaggenrahmen') 
                  const segundaNacionalidadEtiqueta = jugador.querySelector('tbody>tr>td>img.flaggenrahmen:nth-child(3)')
@@ -33,15 +34,21 @@ const puppeteer = require('puppeteer');
 
                  const clubEtiqueta = jugador.querySelector("tr>td:nth-child(5)>a")
                  const club = clubEtiqueta?.title
-
+                 const valorMasAlto = jugador.querySelector("tr>td:nth-child(6)>span")?.innerText
+                 const ultimaRevision = jugador.querySelector("tr>td:nth-child(7)")?.innerText
+                 const valorDelMercado = jugador.querySelector("tr>td:nth-child(8)>a")?.innerText
                  return{
+                    index,
                     nombreJugador,
                     nacionalidades:{
                         nacionalidad,
                         nacionalidad2
                     },
                     edad,
-                    club
+                    club,
+                    valorMasAlto,
+                    ultimaRevision,
+                    valorDelMercado
                  };
             });
             //Arriba acaba el return
@@ -50,15 +57,13 @@ const puppeteer = require('puppeteer');
 
         btnPaginaSiguiente = await pagina.evaluate(()=>{
             //<li class="tm-pagination__list-item tm-pagination__list-item--icon-next-page"><a href="/laliga/marktwerte/pokalwettbewerb/ES1/ajax/yw1/pos//detailpos/0/altersklasse/alle/plus/1/page/2" title="A la página siguiente" class="tm-pagination__link">&nbsp;&nbsp;</a></li>
-            const btnSiguiente = document.querySelector("div>ul>li.a.tm-pagination__link");
-            console.log(btnSiguiente)
-            if(btnSiguiente==true || btnSiguiente != null){
-                console.log("Holaaaaaaaaaa")
+            const btnSiguiente = document.querySelector("a.tm-pagination__link[title='A la página siguiente']");
+            console.log("Este es btn siguiente", btnSiguiente)
+            if(btnSiguiente){
                 btnSiguiente.click();
-                
                 return true;
             }
-            console.log("Esta en el else fuera del IF")
+            
             return false
         });
 
